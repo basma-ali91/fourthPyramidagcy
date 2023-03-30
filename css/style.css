@@ -44,7 +44,7 @@ nav .navbar-brand img {
     height: auto;
 }
 
-nav #navbarNavAltMarkup {
+nav .navbar-collapse {
     justify-content: flex-end;
 }
 
@@ -291,7 +291,7 @@ footer .footericon a {
         text-align: center;
         border-radius: 10px;
     }
-
+    
     #contactpage nav .navbar-collapse,
     nav .navbar-nav .nav-link {
         padding: 1rem 0;
