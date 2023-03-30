@@ -1,0 +1,354 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Rakkas&display=swap');
+
+:root {
+    --maincolor: #f6c90e
+}
+
+body {
+    direction: rtl;
+    background-color: black;
+}
+
+/* start home section */
+
+#home {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/home.webp");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+nav {
+    padding-top: 10px;
+    background-color: rgb(74 73 58 / 73%);
+}
+
+nav .navbar-brand img {
+    max-width: 142px;
+    height: auto;
+}
+
+nav #navbarNavAltMarkup {
+    justify-content: flex-end;
+}
+
+nav .navbar-nav .nav-link {
+    color: white !important;
+    padding: 0 25px;
+    font-family: 'Rakkas', cursive;
+    position: relative;
+}
+
+nav .navbar-nav .nav-link::before {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 20%;
+    visibility: hidden;
+    transition: all .3s ease-in-out 0s;
+}
+
+nav .navbar-nav .nav-link:hover::before {
+    width: 60%;
+    visibility: visible;
+}
+
+nav .navbar-nav .nav-link:hover {
+    color: var(--maincolor) !important;
+}
+
+#home .homecontent {
+    height: calc(100vh - 81.95px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .homecontent h1 {
+    color: var(--maincolor);
+    padding-bottom: 1rem;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+#home .homecontent .homep p {
+    color: #fff;
+    font-size: 20px;
+    width: 60%;
+    text-align: justify;
+    line-height: 35px;
+}
+.fixedwhatsicon{
+    position: fixed;
+    right:20px;
+    bottom:20px;
+    
+}
+.fixedwhatsicon img{
+    height: 34px;
+}
+/* end home section */
+
+/* start services section */
+#services,
+#ourWorks,
+#reveiw,
+#contact {
+    padding: 5rem 0;
+    background-color: #eee;
+}
+
+#services .serviceheader,
+#contact .contacttitle {
+    text-align: center;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+#services .serviceheader::after,
+#contact .contacttitle h2::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    top: 120%;
+    transform: translateX(-50%);
+    height: 3px;
+    background-color: var(--maincolor);
+}
+
+#services .serviceheader h2,
+#ourWorks .worktitle h2,
+#reveiw .reveiwtitle h2,
+#contact .contacttitle h2 {
+    color: var(--maincolor);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+#services .serviceheader p {
+    color: #3a4750;
+    font-size: 1.2rem;
+}
+
+#services .serviceitems .card {
+    border: none !important;
+    text-align: center;
+    box-shadow: 20px 20px 50px gray;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+#services .serviceitems .card img {
+    transition: all .7s;
+}
+
+#services .serviceitems .card img:hover {
+    transform: scale(1.2);
+}
+
+#services .serviceitems .card .card-body .card-title {
+    color: var(--maincolor);
+    font-size: 1.3rem;
+    padding: 1.2rem 0;
+    font-weight: 600;
+}
+
+#services .serviceitems .card .card-body .card-text {
+    color: #3a4750;
+}
+
+#services .serviceitems .card .card-body .btn {
+    border: var(--maincolor) 2px solid;
+    color: #3a4750;
+    font-weight: 700;
+}
+
+#services .serviceitems .card .card-body .btn:hover {
+    background-color: var(--maincolor);
+}
+
+#services .serviceitems .row {
+    margin-bottom: 2rem;
+}
+
+/* end service section */
+
+/* start works section */
+
+#ourWorks {
+    text-align: center;
+    background-color: #fff;
+}
+
+/* end works section */
+
+/* start reveiw section */
+#reveiw {
+    background-color: #fff;
+}
+
+/* end reveiw section */
+
+#contact {
+    background-color: #fff;
+}
+
+#contact .contactimg img {
+    width: 100%;
+}
+
+#contact .contactdetails {
+    margin-bottom: 1.5rem;
+}
+
+#contact .contactdetails .row {
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .contactaddres {
+    margin-bottom: 1.7rem;
+}
+
+#contact .contactaddres h3 {
+    font-size: 1.2rem;
+}
+
+#contact .contactaddres p {
+    color: #73828d;
+    font-weight: 600;
+}
+
+#contact .contactdetails .email p {
+    font-weight: 500;
+}
+
+#contact .contactform {
+    width: 70%;
+    margin: auto;
+}
+
+#contact .contactform input,
+#contact .contactform textarea {
+    margin-bottom: 1rem;
+    padding: 10px;
+    border-radius: 9px;
+}
+
+#contact .contactform .btn {
+    background-color: var(--maincolor);
+    padding: .5rem 1.1rem;
+    font-weight: 700;
+}
+
+#contact .contactform .btn:hover {
+    background-color: #000;
+    color: var(--maincolor);
+}
+
+/* start footer section */
+footer {
+    padding: 1rem 0;
+    background-color: #eee;
+}
+
+footer .footericon a {
+    color: black;
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 0 .5rem;
+}
+
+/* end footer section */
+/* media Query */
+
+@media screen and (max-width:768px) {
+    .navbar-collapse {
+        margin-top: 1rem;
+        background-color: #e9dfdfe8;
+        padding: 2rem 0;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    #contactpage nav .navbar-collapse,
+    nav .navbar-nav .nav-link {
+        padding: 1rem 0;
+        color: #3a4750 !important;
+    }
+
+    nav .navbar-nav .nav-link:hover::before {
+        visibility: hidden;
+    }
+
+    #home {
+        height: 70vh;
+    }
+
+    #home .homecontent {
+        height: calc(70vh - 81.95px);
+    }
+
+    #home .homecontent h1 {
+        font-size: 1.5rem;
+    }
+
+    #home .homecontent .homep p {
+        color: #fff;
+        font-size: .7rem;
+        width: 90%;
+    }
+
+    #services .serviceitems .col-md-4 {
+        margin-bottom: 1rem;
+    }
+
+    #services .serviceitems .card .card-body .card-title {
+        font-size: 1rem;
+        padding: .7rem 0;
+    }
+
+    #services .serviceitems .card .card-body .card-text {
+        font-size: .7rem;
+    }
+
+    #services .serviceitems .card .card-body .btn {
+        font-weight: 400;
+        font-size: .8rem;
+    }
+
+    #ourWorks .workimg img {
+        width: 100%;
+    }
+
+    #contact .contactform {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    .container {
+        width: 930px;
+    }
+}
