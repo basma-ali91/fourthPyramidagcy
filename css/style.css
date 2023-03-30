@@ -101,7 +101,7 @@ nav .navbar-nav .nav-link:hover {
     position: fixed;
     right:20px;
     bottom:20px;
-    
+    z-index: 999;
 }
 .fixedwhatsicon img{
     height: 34px;
