@@ -523,6 +523,13 @@ footer .footericon a {
     #contact .contactform {
         width: 100%;
     }
+    .blogitem{
+        width: 100%;
+        padding: 1rem;
+    }
+    .privacycontent{
+        padding: 1.5rem;
+    }
 }
 
 @media screen and (min-width:768px) and (max-width:992px) {
