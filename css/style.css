@@ -14,7 +14,7 @@
 
 body {
     direction: rtl;
-    background-color: black;
+    background-color: #f5f5f5;
 }
 
 /* start home section */
@@ -26,17 +26,18 @@ body {
     height: 100vh;
 }
 
-.navbar {
+/* .navbar {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 10;
-}
+} */
 
 nav {
     padding-top: 10px;
-    background-color: rgb(74 73 58 / 73%);
+    background-color: transparent;
+    box-shadow: 0px 0px 39px rgba(172, 172, 172, 0.37);
 }
 
 nav .navbar-brand img {
@@ -49,7 +50,7 @@ nav .navbar-collapse {
 }
 
 nav .navbar-nav .nav-link {
-    color: white !important;
+    color: #dda600 !important;
     padding: 0 25px;
     font-family: 'Rakkas', cursive;
     position: relative;
@@ -97,17 +98,157 @@ nav .navbar-nav .nav-link:hover {
     text-align: justify;
     line-height: 35px;
 }
-.fixedwhatsicon{
+
+.fixedwhatsicon {
     position: fixed;
-    right:20px;
-    bottom:20px;
+    right: 20px;
+    bottom: 20px;
     z-index: 999;
 }
-.fixedwhatsicon img{
+
+.fixedwhatsicon img {
     height: 34px;
 }
+
 /* end home section */
 
+
+/* start blog page */
+/* start blogcontent section */
+#blogcontent,
+#privacy {
+    margin: 4rem 0;
+}
+
+.bolgitemcontent {
+    background-color: #fff;
+}
+
+.blogitem {
+    padding: 3rem;
+    width: 90%;
+    margin: auto;
+    border-bottom: 1px solid #eee;
+}
+
+.blogitemimg {
+    text-align: center;
+}
+
+.blogitemimg img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.blogitemtitle h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.blogitem .blogitemtitle .card {
+    border: none
+}
+
+.blogitem .blogitemtitle .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.blogitemlinks {
+    padding: 0 2rem;
+}
+
+.blogitemlinks h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.blogitemlinks .search,
+.blogitemlinks .art,
+.blogitemlinks .ratings,
+.blogitemlinks .buttons {
+    margin-bottom: 2.5rem;
+}
+
+.blogitemlinks .search input,
+.blogitemlinks .search span {
+    box-shadow: none;
+    border: none;
+}
+
+.blogitemlinks .art .articles ul,
+.blogitemlinks .ratings ul {
+    padding-left: .5rem;
+}
+
+.blogitemlinks .art .articles li,
+.blogitemlinks .ratings .ratingsitem li {
+    margin-bottom: 1rem;
+
+}
+
+.blogitemlinks .art .articles li a,
+.blogitemlinks .ratings li a {
+    color: #234d6b;
+    text-decoration: none;
+}
+
+.blogitemlinks .art .articles li a:hover,
+.blogitemlinks .ratings li a:hover {
+    color: var(--maincolor);
+}
+
+.blogitemlinks .gallary .insta {
+    margin-bottom: 2.5rem;
+}
+
+.blogitemlinks .gallary .itemsgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    margin-bottom: 2.5rem;
+    gap: 2px;
+}
+
+.blogitemlinks .gallary .itemsgrid img {
+    width: 100%;
+    height: 100%;
+}
+
+.blogitemlinks .gallary .itemsgrid .item1 {
+    grid-area: 1/1/3/3;
+}
+
+.blogitemlinks .gallary .itemsgrid .item6 {
+    grid-area: 3/3/4/4;
+}
+/* end blog page */
+
+/* start privacy page */
+.privacycontent{
+    background-color: #fff;
+    padding: 4rem;
+}
+.privacycontent h4{
+    margin: 3rem 0;
+    font-size: 1.2rem;
+}
+.privacycontent h3{
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+.privacycontent p span{
+    display: inline-block;
+    margin-top: 3rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.privacycontent p{
+    font-size: .8rem;
+}
+/* end privacy page */
 /* start services section */
 #services,
 #ourWorks,
@@ -208,6 +349,43 @@ nav .navbar-nav .nav-link:hover {
     background-color: #fff;
 }
 
+#reveiw .item {
+    border: 1px solid #858b8f3b;
+    padding: 1rem;
+    border-radius: .5rem;
+    height: 230px;
+}
+
+#reveiw .itemdetails {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#reveiw .itemdetails .itemimg img {
+    width: 40px;
+    height: 40px;
+}
+
+#reveiw .itemdetails .itemimg span {
+    font-weight: 600;
+}
+
+#reveiw .itemdetails .reveiwstar i {
+    color: var(--maincolor);
+}
+
+#reveiw .itemdetails .linked i {
+    color: #0077b5;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+#reveiw .item p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
 /* end reveiw section */
 
 #contact {
@@ -291,7 +469,7 @@ footer .footericon a {
         text-align: center;
         border-radius: 10px;
     }
-    
+
     #contactpage nav .navbar-collapse,
     nav .navbar-nav .nav-link {
         padding: 1rem 0;
