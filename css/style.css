@@ -26,13 +26,13 @@ body {
     height: 100vh;
 }
 
-/* .navbar {
-    position: fixed;
+.navbar {
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     z-index: 10;
-} */
+}
 
 nav {
     padding-top: 10px;
@@ -117,7 +117,7 @@ nav .navbar-nav .nav-link:hover {
 /* start blogcontent section */
 #blogcontent,
 #privacy {
-    margin: 4rem 0;
+    margin: 8rem 0;
 }
 
 .bolgitemcontent {
@@ -249,6 +249,9 @@ nav .navbar-nav .nav-link:hover {
     font-size: .8rem;
 }
 /* end privacy page */
+#contactpage{
+    padding: 8rem 0;
+}
 /* start services section */
 #services,
 #ourWorks,
@@ -280,11 +283,13 @@ nav .navbar-nav .nav-link:hover {
 #services .serviceheader h2,
 #ourWorks .worktitle h2,
 #reveiw .reveiwtitle h2,
-#contact .contacttitle h2 {
+#contact .contacttitle h2, 
+#contactpage .contacttitle h2{
     color: var(--maincolor);
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 #services .serviceheader p {
@@ -297,14 +302,16 @@ nav .navbar-nav .nav-link:hover {
     text-align: center;
     box-shadow: 20px 20px 50px gray;
     margin-bottom: 1.5rem;
-    overflow: hidden;
 }
 
-#services .serviceitems .card img {
+#services .serviceitems .card .overlay{
+    overflow: hidden;
+}
+#services .serviceitems .card .overlay img {
     transition: all .7s;
 }
 
-#services .serviceitems .card img:hover {
+#services .serviceitems .card .overlay img:hover {
     transform: scale(1.2);
 }
 
@@ -388,59 +395,61 @@ nav .navbar-nav .nav-link:hover {
 
 /* end reveiw section */
 
-#contact {
+#contact ,#contactpage{
     background-color: #fff;
 }
 
-#contact .contactimg img {
+#contact .contactimg img ,#contactpage .contactimg img {
     width: 100%;
 }
 
-#contact .contactdetails {
+#contact .contactdetails ,#contactpage .contactdetails {
     margin-bottom: 1.5rem;
 }
 
-#contact .contactdetails .row {
+#contact .contactdetails .row ,#contactpage .contactdetails .row  {
     justify-content: center;
     align-items: center;
 }
 
-#contact .contactaddres {
+#contact .contactaddres ,#contactpage .contactaddres {
     margin-bottom: 1.7rem;
 }
 
-#contact .contactaddres h3 {
+#contact .contactaddres h3 ,#contactpage .contactaddres h3 {
     font-size: 1.2rem;
 }
 
-#contact .contactaddres p {
+#contact .contactaddres p ,#contactpage .contactaddres p{
     color: #73828d;
     font-weight: 600;
 }
 
-#contact .contactdetails .email p {
+#contact .contactdetails .email p,#contactpage .contactdetails .email p {
     font-weight: 500;
 }
 
-#contact .contactform {
+#contact .contactform ,#contactpage .contactform {
     width: 70%;
     margin: auto;
 }
 
 #contact .contactform input,
-#contact .contactform textarea {
+#contact .contactform textarea,#contactpage .contactform input,
+#contactpage .contactform textarea {
     margin-bottom: 1rem;
     padding: 10px;
     border-radius: 9px;
 }
 
-#contact .contactform .btn {
+#contact .contactform .btn ,#contactpage .contactform .btn {
     background-color: var(--maincolor);
     padding: .5rem 1.1rem;
     font-weight: 700;
 }
 
-#contact .contactform .btn:hover {
+#contact .contactform .btn:hover ,
+#contactpage .contactform .btn:hover {
     background-color: #000;
     color: var(--maincolor);
 }
@@ -485,7 +494,9 @@ footer .footericon a {
     }
 
     #home .homecontent {
+        
         height: calc(70vh - 81.95px);
+        align-items: center;
     }
 
     #home .homecontent h1 {
@@ -520,8 +531,8 @@ footer .footericon a {
         width: 100%;
     }
 
-    #contact .contactform {
-        width: 100%;
+    #contact .contactform, #contactpage .contactform {
+        width: 90%;
     }
     .blogitem{
         width: 100%;
@@ -529,6 +540,9 @@ footer .footericon a {
     }
     .privacycontent{
         padding: 1.5rem;
+    }
+    #contact .contactdetails ,#contactpage .contactdetails {
+       padding: 1rem;
     }
 }
 

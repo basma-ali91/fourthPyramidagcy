@@ -18,6 +18,16 @@ AOS.init({
 //     }
     
 // })
+$("document").ready(function(){
+     new Typed('#ele', {
+        strings: ["  ركه الهرم الرابع"],
+        typeSpeed: 100,
+        loop:true,
+        backSpeed: 100,
+        backDelay: 700,
+        showCursor: false,
+      });
+})
 
 
 $('.owl-carousel').owlCarousel({
