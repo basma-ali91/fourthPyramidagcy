@@ -488,6 +488,9 @@ footer .footericon a {
     nav .navbar-nav .nav-link:hover::before {
         visibility: hidden;
     }
+    .navbar-toggler:focus {
+         box-shadow: none;
+    }
 
     #home {
         height: 70vh;
