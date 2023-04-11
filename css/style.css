@@ -137,13 +137,15 @@ nav .navbar-nav .nav-link:hover {
 
 .blogitemimg img {
     width: 100%;
-    border-radius: 4px;
-    margin-bottom: 1rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow:  2px 8px 32px #444443;
 }
 
 .blogitemtitle h2 {
     font-size: 1.4rem;
     font-weight: 500;
+    color: #cda428;
 }
 
 .blogitem .blogitemtitle .card {

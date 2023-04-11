@@ -20,7 +20,7 @@ AOS.init({
 // })
 $("document").ready(function(){
      new Typed('#ele', {
-        strings: ["  ركه الهرم الرابع"],
+        strings: ["  ركة الهرم الرابع"],
         typeSpeed: 100,
         loop:true,
         backSpeed: 100,
